@@ -14,46 +14,51 @@ def get_destinations():
         with open(json_path, 'r') as f:
             return json.load(f)
     except FileNotFoundError:
-        # If file not found, return sample data
+        # If file not found, return sample data with Indian destinations and budget in INR
         return [
             {
-                "name": "Paris",
-                "country": "France",
-                "tags": ["romantic", "culture", "food"],
-                "budget_level": "high",
+                "name": "Manali",
+                "country": "India",
+                "tags": ["mountains", "nature", "trekking", "adventure"],
+                "budget_level": "medium",
+                "budget_inr": {"low": "₹15,000-25,000", "medium": "₹25,000-40,000", "high": "₹40,000+"},
                 "ideal_duration": [3, 7],
-                "best_seasons": ["spring", "fall"]
+                "best_seasons": ["summer", "spring"]
             },
             {
-                "name": "Bali",
-                "country": "Indonesia",
-                "tags": ["beaches", "relaxation", "spiritual"],
+                "name": "Shimla",
+                "country": "India",
+                "tags": ["mountains", "colonial", "scenic"],
                 "budget_level": "medium",
-                "ideal_duration": [5, 14],
-                "best_seasons": ["spring", "fall"]
-            },
-            {
-                "name": "Tokyo",
-                "country": "Japan",
-                "tags": ["culture", "food", "shopping"],
-                "budget_level": "high",
-                "ideal_duration": [5, 10],
-                "best_seasons": ["spring", "fall"]
-            },
-            {
-                "name": "Prague",
-                "country": "Czech Republic",
-                "tags": ["culture", "history", "architecture"],
-                "budget_level": "medium",
+                "budget_inr": {"low": "₹12,000-20,000", "medium": "₹20,000-35,000", "high": "₹35,000+"},
                 "ideal_duration": [2, 5],
-                "best_seasons": ["spring", "summer"]
+                "best_seasons": ["summer", "spring", "autumn"]
             },
             {
-                "name": "Costa Rica",
-                "country": "Costa Rica",
-                "tags": ["nature", "adventure", "beaches"],
+                "name": "Dharamshala",
+                "country": "India",
+                "tags": ["mountains", "spiritual", "trekking", "culture"],
+                "budget_level": "low",
+                "budget_inr": {"low": "₹10,000-18,000", "medium": "₹18,000-30,000", "high": "₹30,000+"},
+                "ideal_duration": [3, 6],
+                "best_seasons": ["spring", "autumn"]
+            },
+            {
+                "name": "Dalhousie",
+                "country": "India",
+                "tags": ["mountains", "nature", "scenic", "colonial"],
                 "budget_level": "medium",
-                "ideal_duration": [7, 14],
-                "best_seasons": ["winter", "spring"]
+                "budget_inr": {"low": "₹12,000-20,000", "medium": "₹20,000-35,000", "high": "₹35,000+"},
+                "ideal_duration": [2, 5],
+                "best_seasons": ["summer", "spring"]
+            },
+            {
+                "name": "Kasol",
+                "country": "India",
+                "tags": ["trekking", "nature", "adventure", "backpacking"],
+                "budget_level": "low",
+                "budget_inr": {"low": "₹8,000-15,000", "medium": "₹15,000-25,000", "high": "₹25,000+"},
+                "ideal_duration": [3, 7],
+                "best_seasons": ["spring", "autumn"]
             }
         ]

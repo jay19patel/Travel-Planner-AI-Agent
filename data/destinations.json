@@ -1,82 +1,82 @@
 [
-    {
-      "name": "Paris",
-      "country": "France",
-      "tags": ["romantic", "culture", "food", "history", "art"],
-      "budget_level": "high",
-      "ideal_duration": [3, 7],
-      "best_seasons": ["spring", "fall"]
-    },
-    {
-      "name": "Bali",
-      "country": "Indonesia",
-      "tags": ["beaches", "relaxation", "spiritual", "nature"],
-      "budget_level": "medium",
-      "ideal_duration": [5, 14],
-      "best_seasons": ["spring", "fall"]
-    },
-    {
-      "name": "Tokyo",
-      "country": "Japan",
-      "tags": ["culture", "food", "shopping", "technology", "urban"],
-      "budget_level": "high",
-      "ideal_duration": [5, 10],
-      "best_seasons": ["spring", "fall"]
-    },
-    {
-      "name": "Barcelona",
-      "country": "Spain",
-      "tags": ["beaches", "culture", "architecture", "food", "nightlife"],
-      "budget_level": "medium",
-      "ideal_duration": [3, 7],
-      "best_seasons": ["spring", "summer", "fall"]
-    },
-    {
-      "name": "New York City",
-      "country": "USA",
-      "tags": ["urban", "culture", "shopping", "food", "art"],
-      "budget_level": "high",
-      "ideal_duration": [4, 8],
-      "best_seasons": ["spring", "fall"]
-    },
-    {
-      "name": "Bangkok",
-      "country": "Thailand",
-      "tags": ["culture", "food", "temples", "shopping", "budget"],
-      "budget_level": "low",
-      "ideal_duration": [3, 6],
-      "best_seasons": ["winter", "spring"]
-    },
-    {
-      "name": "Rome",
-      "country": "Italy",
-      "tags": ["history", "culture", "food", "architecture", "art"],
-      "budget_level": "medium",
-      "ideal_duration": [3, 7],
-      "best_seasons": ["spring", "fall"]
-    },
-    {
-      "name": "Cancun",
-      "country": "Mexico",
-      "tags": ["beaches", "relaxation", "resorts", "nightlife"],
-      "budget_level": "medium",
-      "ideal_duration": [4, 10],
-      "best_seasons": ["winter", "spring"]
-    },
-    {
-      "name": "Santorini",
-      "country": "Greece",
-      "tags": ["beaches", "romantic", "scenic", "relaxation"],
-      "budget_level": "high",
-      "ideal_duration": [3, 7],
-      "best_seasons": ["spring", "summer", "fall"]
-    },
-    {
-      "name": "Cape Town",
-      "country": "South Africa",
-      "tags": ["nature", "beaches", "adventure", "food", "wildlife"],
-      "budget_level": "medium",
-      "ideal_duration": [5, 12],
-      "best_seasons": ["spring", "fall"]
-    }
-  ]
+  {
+    "name": "Udaipur",
+    "country": "India",
+    "tags": ["romantic", "culture", "history", "art", "heritage"],
+    "budget_level": "medium",
+    "ideal_duration": [3, 5],
+    "best_seasons": ["winter", "fall"]
+  },
+  {
+    "name": "Goa",
+    "country": "India",
+    "tags": ["beaches", "relaxation", "spiritual", "nature"],
+    "budget_level": "medium",
+    "ideal_duration": [4, 10],
+    "best_seasons": ["winter", "spring"]
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "tags": ["culture", "food", "shopping", "technology", "urban"],
+    "budget_level": "high",
+    "ideal_duration": [3, 6],
+    "best_seasons": ["winter", "spring"]
+  },
+  {
+    "name": "Pondicherry",
+    "country": "India",
+    "tags": ["beaches", "culture", "architecture", "food", "nightlife"],
+    "budget_level": "medium",
+    "ideal_duration": [3, 5],
+    "best_seasons": ["winter", "spring", "fall"]
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "tags": ["urban", "culture", "shopping", "food", "art"],
+    "budget_level": "high",
+    "ideal_duration": [3, 6],
+    "best_seasons": ["winter", "fall"]
+  },
+  {
+    "name": "Varanasi",
+    "country": "India",
+    "tags": ["culture", "food", "temples", "spiritual", "budget"],
+    "budget_level": "low",
+    "ideal_duration": [2, 5],
+    "best_seasons": ["winter", "spring"]
+  },
+  {
+    "name": "Jaipur",
+    "country": "India",
+    "tags": ["history", "culture", "food", "architecture", "art"],
+    "budget_level": "medium",
+    "ideal_duration": [3, 5],
+    "best_seasons": ["winter", "fall"]
+  },
+  {
+    "name": "Andaman Islands",
+    "country": "India",
+    "tags": ["beaches", "relaxation", "resorts", "scuba", "nature"],
+    "budget_level": "medium",
+    "ideal_duration": [4, 8],
+    "best_seasons": ["winter", "spring"]
+  },
+  {
+    "name": "Munnar",
+    "country": "India",
+    "tags": ["scenic", "romantic", "nature", "relaxation"],
+    "budget_level": "medium",
+    "ideal_duration": [3, 5],
+    "best_seasons": ["spring", "summer", "fall"]
+  },
+  {
+    "name": "Coorg",
+    "country": "India",
+    "tags": ["nature", "adventure", "coffee", "food", "wildlife"],
+    "budget_level": "medium",
+    "ideal_duration": [3, 6],
+    "best_seasons": ["spring", "fall"]
+  }
+]
