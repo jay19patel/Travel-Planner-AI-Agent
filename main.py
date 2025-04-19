@@ -1,0 +1,57 @@
+import os
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+from google.generativeai import GenerativeModel 
+from agent.graph import build_travel_agent
+from agent.state import AgentState
+
+# Load environment variables
+load_dotenv()
+
+def main():
+    # Initialize the model
+    # llm = ChatOpenAI(temperature=0.7)
+    llm =  GenerativeModel('gemini-pro')
+    
+    # Build the travel agent
+    travel_agent = build_travel_agent(llm)
+    
+    print("Welcome to the Travel Planner AI Agent!")
+    print("Tell me about your travel preferences (budget, duration, interests, etc.)")
+    
+    # Initialize state
+    state = AgentState(
+        preferences={},
+        destinations=[],
+        itinerary={},
+        history=[],
+        is_followup=False
+    )
+    
+    # Start conversation
+    user_input = input("You: ")
+    
+    while True:
+        # Add user message to history
+        state.history.append({"role": "user", "content": user_input})
+        
+        # Process through the graph
+        result = travel_agent.invoke(state)
+        
+        # Extract the latest assistant message from the updated state
+        assistant_message = result.history[-1]["content"] if result.history[-1]["role"] == "assistant" else "I'm processing your request..."
+        
+        print(f"Travel Agent: {assistant_message}")
+        
+        # Check if user wants to exit
+        user_input = input("You (type 'exit' to quit): ")
+        if user_input.lower() == 'exit':
+            print("Thank you for using the Travel Planner AI Agent. Goodbye!")
+            break
+        
+        # Update state for next iteration
+        state = result
+        state.is_followup = True
+
+if __name__ == "__main__":
+    main()
